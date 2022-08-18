@@ -1,0 +1,28 @@
+{
+  "name": "notifications",
+  "version": "1.0.0",
+  "description": "Notifications service",
+  "main": "index.js",
+  "scripts": {
+    "git": "func() { git add . && git commit -m \"$1\" && git push origin HEAD; }; func",
+    "start": "NODE_ENV=production && node index.js",
+    "dev": "NODE_ENV=development && nodemon --legacy-watch  index.js",
+    "test": "npm run test"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Jude Dike",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "amqplib": "^0.7.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "messagebird": "^3.6.1",
+    "nodemailer": "^6.6.0",
+    "nodemon": "^2.0.7",
+    "notifme-sdk": "^1.10.0",
+    "twilio": "^3.61.0"
+  }
+}
